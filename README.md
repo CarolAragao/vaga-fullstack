@@ -64,8 +64,34 @@ Além do funcionamento do sistema, será avaliada a organização do código, co
 
 ## Instruções para construção (build) e execução (run) do frontend
 
-<preencha as instruções nesse tópico>
+(Instruções para Construção e Execução do Frontend (React com Vite e TypeScript))
+Instalar:  Node.js (usei a versão  v20.11.0.)
+           npm (usei a versão 10.1.0)
+           
+comandos:  npm install (para instalar todos os pacotes)
+           npm run build
+           npm run dev (para executar o frontend)
+           
+Para o banco de dados: "http://localhost:8080/produto"
 
 ## Instruções para construção (build) e execução (run) do backend
 
-<preencha as instruções nesse tópico>
+(Instruções para Construção e Execução do Backend (Spring Boot com PostgreSQL):)
+
+Instalar: Maven (usei arquivo JAR)
+          Docker
+          
+comandos: mvn clean install
+
+Para o banco de dados, em "application.propreties":
+    spring.datasource.url=jdbc:postgresql://localhost:5432/catalogoDeLeite
+    spring.datasource.username=postgres
+    spring.datasource.password=password
+    
+para iniciar o container: 
+    docker run -d --name catalogoDeLeite -e POSTGRES_PASSWORD=password -p 5432:5432 postgres:latest
+    
+para iniciar o aplicativo Spring Boot:
+java -jar target/catalogoDeLeite-0.0.1-SNAPSHOT.jar
+
+porta parar testes da IDE: http://localhost:8080/produto
