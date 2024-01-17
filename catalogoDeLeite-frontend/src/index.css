@@ -1,0 +1,90 @@
+:root {
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  margin: 3% 25% 25% 25%;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid grey;
+  border-radius: 6px; 
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em;
+  background-color: #074EE8;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+p {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #EEEEEE; 
+  padding: 10px;
+  text-align: left;
+  position: relative; 
+}
+
+td {
+  border: 1px solid grey;
+  padding: 8px;
+}
+
+.order-arrow, i {
+  cursor: pointer;
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
+.order-arrow {
+  right: 10px;
+}
+
+i {
+  left: 45%;
+}
+
+.pagination {
+  display: flex;
+}
+
+.pagination button {
+  margin-right: 15px; 
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputContainer > div {
+  margin-right: 30px; 
+  width: 30%; 
+}
+
+.inputContainer > div:nth-child(2) {
+  width: 70%; 
+}
+
+.NewItem{
+   margin-top: 50px;
+ }
